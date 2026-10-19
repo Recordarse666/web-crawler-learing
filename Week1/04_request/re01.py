@@ -9,3 +9,5 @@ hea={
 resp=requests.get(url,headers=hea)#处理一个小反爬
 print(resp)
 print(resp.text)#页面源代码
+
+resp.close()

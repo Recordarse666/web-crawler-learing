@@ -18,7 +18,7 @@ resp=requests.get(url=url,params=param,headers=headers)#会对url进行处理，
 #print(resp.request.url)
 print(resp.json())#啥都没有，被反爬了,加上User-Agent
 
-
+resp.close()#关闭
 # User-Agent（UA）= 你每次进网站时递给门卫的名片。
 # 它是什么：HTTP 请求头里的一段文字，告诉服务器「我是谁、用什么浏览器、什么系统」。
 
